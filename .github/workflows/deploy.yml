@@ -1,6 +1,6 @@
 # https://github.com/actions/deploy-pages#usage
 name: Deploy to GitHub Pages
-theme: minima
+theme: jekyll-theme-minimal
 on:
   workflow_dispatch:
   push:
