@@ -2,6 +2,7 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "homepage": "https://OlekSandr-offensive.github.io/Nuxt-blog-API/",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
