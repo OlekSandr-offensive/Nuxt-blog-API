@@ -1,6 +1,12 @@
 <template>
   <div class="container">
-    <ul style="list-style: none; padding: 0; margin: 0">
+    <div class="spinner-border text-primary" role="status" v-if="pending">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <ul
+      style="list-style: none; padding: 0; margin: 0"
+      v-if="posts?.length !== 0"
+    >
       <li
         class="blog-post-title mb-1"
         v-for="post of posts"
@@ -11,13 +17,14 @@
         </NuxtLink>
       </li>
     </ul>
+    <div v-else>No found</div>
   </div>
 </template>
 
 <script setup lang="js">
 const endpoint = "posts";
 
-const { data: posts } = await useMyFetch(endpoint, { key: 'posts' });
+const { data: posts, pending } = await useMyFetch(endpoint, { key: 'posts' });
 </script>
 
 <style scoped>

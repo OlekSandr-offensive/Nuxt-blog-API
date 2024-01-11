@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <!-- Comments Section -->
-    <div class="p-4 mb-3 bg-light rounded">
+    <div class="p-4 mb-3 bg-light rounded" v-if="comments?.length !== 0">
       <h3 class="fst-italic">Comments</h3>
 
       <!-- Single Comment -->
@@ -20,6 +20,7 @@
         </div>
       </div>
     </div>
+    <div v-else>No found</div>
   </div>
 </template>
 
