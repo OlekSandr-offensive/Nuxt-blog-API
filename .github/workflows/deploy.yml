@@ -1,6 +1,5 @@
 # https://github.com/actions/deploy-pages#usage
 name: Deploy to GitHub Pages
-theme: jekyll-theme-minimal
 on:
   workflow_dispatch:
   push:
@@ -40,3 +39,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+      # theme: github_pages
+    plugins:
+      - jekyll-feed
+      - jekyll-seo-tag
