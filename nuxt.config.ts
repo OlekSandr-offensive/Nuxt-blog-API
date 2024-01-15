@@ -29,6 +29,4 @@ export default defineNuxtConfig({
     "~/assets/css/style.css",
     "bootstrap/dist/css/bootstrap.css",
   ],
-
-  ssr: false,
 });
