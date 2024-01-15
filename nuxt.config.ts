@@ -6,6 +6,8 @@ export default defineNuxtConfig({
     "@": resolve(__dirname, "/"),
   },
   app: {
+    baseURL: "https://OlekSandr-offensive.github.io/Nuxt-blog-API/",
+    buildAssetsDir: "assets",
     head: {
       link: [
         {
@@ -29,6 +31,4 @@ export default defineNuxtConfig({
     "~/assets/css/style.css",
     "bootstrap/dist/css/bootstrap.css",
   ],
-
-  ssr: false,
 });
