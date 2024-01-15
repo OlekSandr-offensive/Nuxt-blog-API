@@ -30,5 +30,5 @@ export default defineNuxtConfig({
     "bootstrap/dist/css/bootstrap.css",
   ],
 
-  ssr: false,
+  ssr: true,
 });
