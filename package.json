@@ -2,14 +2,13 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
-  "homepage": "https://OlekSandr-offensive.github.io/Nuxt-blog-API/",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d [rootDir]"
+    "deploy": "gh-pages -d [rootDir] dist"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
