@@ -22,9 +22,10 @@
 </template>
 
 <script setup lang="js">
+
 const endpoint = "posts";
 
-const { data: posts, pending } = await useMyFetch(endpoint, { key: 'posts' });
+const { data: posts, pending} = await useMyFetch(endpoint, {key: 'posts'});
 </script>
 
 <style scoped>
