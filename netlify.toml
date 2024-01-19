@@ -1,6 +1,13 @@
 [build]
-  command = "nuxt build"
-  functions = "dist/functions"
+    base='/'
+    publish='dist'
+    command='nuxt generate'
+    environment = { NODE_VERSION = "20.10.0" }
 
-[dev]
-  publish = "dist"
+[dev]                                          
+   framework = "#custom"                                                    
+   command = "npm run dev"             
+   targetPort = 3000
+   debug = true
+   port = 8888
+   publish = "dist"

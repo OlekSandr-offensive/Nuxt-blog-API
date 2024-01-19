@@ -30,5 +30,9 @@ export default defineNuxtConfig({
     "bootstrap/dist/css/bootstrap.css",
   ],
 
-  ssr: true,
+  ssr: false,
+
+  generate: {
+    routes: ["/posts", "/post", "/"], // Add your routes here
+  },
 });
