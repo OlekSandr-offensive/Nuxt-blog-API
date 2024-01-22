@@ -40,10 +40,12 @@ const { data: post,  pending } = await useMyFetch(`/posts/${id}`, {
   },
 })
 
+
 if (!post.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page Not Found'
+    statusMessage: 'Page Not Found',
+    fatal: true
   })
 }
 </script>

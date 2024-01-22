@@ -1,7 +1,6 @@
 <script setup lang="js">
-const props = defineProps({
-  error: Object,
-});
+defineProps(['error']);
+
 
 const handleError = () => clearError({ redirect: "/" });
 </script>
@@ -11,7 +10,7 @@ const handleError = () => clearError({ redirect: "/" });
     <div class="card mx-auto bottom-50 text-center" style="width: 18rem">
       <h2 class="card-title">{{ error.statusCode }}</h2>
       <p>Ooops.</p>
-      <p>{{ error.message }}</p>
+      <p>{{ error.statusMessage }}</p>
       <button @click="handleError" class="btn btn-primary btn-sm">
         Go back
       </button>
