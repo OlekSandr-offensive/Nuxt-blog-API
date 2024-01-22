@@ -31,6 +31,6 @@ export default defineNuxtConfig({
   ],
 
   generate: {
-    routes: ["/posts", "/post", "/"], // Add your routes here
+    routes: ["/posts/", "/post/", "/"], // Add your routes here
   },
 });
