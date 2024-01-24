@@ -25,6 +25,7 @@
 </template>
 
 <script setup>
-const endpoint = "comments";
-const { data: comments } = await useMyFetch(endpoint);
+const { data: comments } = await useFetch(
+  "https://62fe137ba85c52ee482f275b.mockapi.io/api/v1/comments",
+);
 </script>

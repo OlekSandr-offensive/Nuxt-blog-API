@@ -12,7 +12,7 @@
         v-for="post of posts"
         v-bind:key="post.id"
       >
-        <NuxtLink :to="`/post/${post.id}`" class="custom"
+        <NuxtLink :to="`/posts/${post.id}`" class="custom"
           >{{ post.title }}
         </NuxtLink>
       </li>
@@ -22,10 +22,7 @@
 </template>
 
 <script setup lang="js">
-
-const endpoint = "posts";
-
-const { data: posts, pending} = await useMyFetch(endpoint, {key: 'posts'});
+const { pending, data: posts } = await useFetch('https://62fe137ba85c52ee482f275b.mockapi.io/api/v1/posts')
 </script>
 
 <style scoped>

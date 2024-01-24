@@ -1,11 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { resolve } from "path";
-
 export default defineNuxtConfig({
-  alias: {
-    "@": resolve(__dirname, "/"),
-  },
   app: {
+    baseURL: "/Nuxt-blog-API/",
     head: {
       link: [
         {
@@ -16,12 +12,6 @@ export default defineNuxtConfig({
     },
   },
 
-  runtimeConfig: {
-    public: {
-      baseURL: "https://62fe137ba85c52ee482f275b.mockapi.io/api/v1/",
-    },
-  },
-
   devtools: { enabled: true },
 
   css: [
@@ -29,8 +19,4 @@ export default defineNuxtConfig({
     "~/assets/css/style.css",
     "bootstrap/dist/css/bootstrap.css",
   ],
-
-  generate: {
-    routes: ["/posts/", "/post/", "/"], // Add your routes here
-  },
 });
