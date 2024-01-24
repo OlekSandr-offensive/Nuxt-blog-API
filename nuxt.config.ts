@@ -25,4 +25,12 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: true,
   },
+
+  nitro: {
+    preset: "node-server",
+    prerender: {
+      routes: ["/posts/", "/[id]/", "/[...slug]/"],
+    },
+    static: true,
+  },
 });
