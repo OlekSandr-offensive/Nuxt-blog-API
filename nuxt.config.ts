@@ -20,9 +20,5 @@ export default defineNuxtConfig({
     "bootstrap/dist/css/bootstrap.css",
   ],
 
-  ssr: false,
-
-  nitro: {
-    static: true,
-  },
+  dev: process.env.NODE_ENV !== "production",
 });
