@@ -20,14 +20,7 @@ export default defineNuxtConfig({
     "bootstrap/dist/css/bootstrap.css",
   ],
 
-  ssr: true,
-
-  experimental: {
-    payloadExtraction: true,
-  },
-
   nitro: {
-    preset: "gh-pages",
     static: true,
   },
 });
