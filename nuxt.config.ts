@@ -27,10 +27,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: "node-server",
-    prerender: {
-      routes: ["/posts/", "/[id]/", "/[...slug]/"],
-    },
+    preset: "gh-pages",
     static: true,
   },
 });
