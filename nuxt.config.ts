@@ -19,6 +19,4 @@ export default defineNuxtConfig({
     "~/assets/css/style.css",
     "bootstrap/dist/css/bootstrap.css",
   ],
-
-  dev: process.env.NODE_ENV !== "production",
 });
