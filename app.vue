@@ -1,9 +1,7 @@
 <template>
   <div>
-    <ClientOnly>
-      <TheAppBar />
-      <NuxtPage />
-      <TheFooter />
-    </ClientOnly>
+    <TheAppBar />
+    <NuxtPage />
+    <TheFooter />
   </div>
 </template>
